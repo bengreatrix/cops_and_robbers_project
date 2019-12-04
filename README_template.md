@@ -209,7 +209,7 @@ We'll need ## (#) terminal windows
 	
 </TR>
 <TR>
-	<TD>generate simple gazebo world</TD>
+	<TD>Generate simple gazebo world</TD>
 	<TD>100%</TD>
 	
 </TR>
