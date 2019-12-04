@@ -44,7 +44,7 @@ You must then drive into one of the two exits shown below.
 Be careful not to be caught by the Copbot. If the Copbot gets too close to you (roughly a half meter) you will see the message below in your Robber.py terminal and you will lose the game.
 
 
-### Game mode 2:
+### Game Mode 2:
 
 In this mode, two people will be playing. One player will connect to the Robber and ther other player will connect to the Robber over the network. The rules of the game are the same.
 
@@ -117,7 +117,7 @@ List of Prerequisite Software:
 
 *NOTE 2:  If you're generating mazes, for example, the task of GENERATING a new maze would go here.*
 
-# Mode 1
+### Game Mode 1
 
 We'll need ## (#) terminal windows
 
@@ -152,7 +152,7 @@ Navigate back to the controls terminal so that your keystrokes are recorded. You
 
 5. Play the game and have fun!
 
-# Mode 2
+### Game Mode 2
 
 We'll need ## (#) terminal windows
 
