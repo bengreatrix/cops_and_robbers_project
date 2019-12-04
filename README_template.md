@@ -224,7 +224,7 @@ We'll need ## (#) terminal windows
 	
 </TR>
 <TR>
-	<Allow Robber to know its coordinates within the area</TD>
+	<TD>Allow Robber to know its coordinates within the area</TD>
 	<TD>100%</TD>
 	
 </TR>
