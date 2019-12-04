@@ -176,6 +176,87 @@ We'll need ## (#) terminal windows
 <TR>
 	<TD>Write brain reader software to move the robot</TD>
 	<TD>25% (brain reader software detects brain waves, but does not translate to ROS commands.)</TD>
+	
+</TR>
+<TR>
+	<TD>Complete proposal document</TD>
+	<TD>100%</TD>
+
+</TR>
+<TR>
+	<TD>Generate complex gazebo world</TD>
+	<TD>100%</TD>
+
+</TR>
+<TR>
+	<TD>Color Turlebot bases two different colors</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<TD>Spawn two Turlebots in gazebo</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<TD>Allow two Turtlebots to be controlled at the same time (Not over a network)</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<TD>Allow Copbot to know when the Robber is in its feild of view</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<TD>generate simple gazebo world</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<TD>Allow Copbot to autonomously wander the area in search of the Robber</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<TD>Allow Copbot to autonomously follow the Robber when he is in its field of view</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<Allow Robber to know its coordinates within the area</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<TD>Write final launch files for the gazebo worlds</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<TD>Write final launch files for controlling the Turtlebots</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<TD>Write final script for the Robber</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<TD>Write final script for the Copbot</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<TD>Complete final report</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
+	<TD>Submit final presentation</TD>
+	<TD>100%</TD>
+
 </TR>
 </TABLE>
 
@@ -192,11 +273,19 @@ We'll need ## (#) terminal windows
 
 *Also, what challenges did you face, and how did you overcome these?  Be specific.*
 
+We now have a solid understanding of editing urdf files for models, subscribing/publishing to topics, setting up networks, and writing logic for turtlebots. We learned techniques such as creating state machines, spinning code, and using callbacks.
+
 ---
 
 ## Future Work
 
 *If a student from next year's class wants to build upon your project, what would you suggest they do?  What suggestions do you have to help get them started (e.g., are there particular Websites they should check out?).*
+
+If a student wanted to imrove upon this project, some suggestions are as follows:
+- Improve the speed at which the program runs
+- improve upon the ## and ## script that the Copbot uses so that it is better at pursuing the Robber
+- Make the program more user friendly (i.e. encorporate everything into one launch file)
+- Build a map for the copbot so it can autonomsly pursue the robber in the complex area
 
 ---
 
