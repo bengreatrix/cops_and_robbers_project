@@ -14,8 +14,8 @@ Project Name: [provide catkin_ws name here].
 *For example, `followbot`, `wanderbot`, and `redball` are project names we've used in class.  When I install your code, I want to know where I'll find it in `~/catkin_ws/src/`*
 
 Team Members:
-- [Member 1, email]
-- [Member 2, email]
+- [Ben Greatrix, bengreat@buffalo.edu]
+- [Brandon Andreu, bandreu@buffalo.edu]
 
 ---
 
@@ -25,11 +25,34 @@ Team Members:
 
 *NOTE:  This is not a proposal.  This is a final report describing your actual completed project.*
 
+This project was inspired from the children's game known as cops and robbers. There are two game modes.
 
+# Game Mode 1:
+
+In this mode, only one person will be playing. You will be contolling a Turtlebot which is a "Robber". Your goal is to first steal a piece of gold and then exit the area, all while not being discovered by the autonomoaly controlled "Copbot". You must drive up close enough to one of the gold ingets shown below.
+
+*insert image*
+
+Once you are close enough, a message will appear in the Robber.py terminal alerting you that you have the gold.
+
+*insert image*
+
+You must then drive into one of the two exits shown below.
+
+*insert*
+
+Be careful not to be caught by the Copbot. If the Copbot gets too close to you (roughly a half meter) you will see the message below in your Robber.py terminal and you will lose the game.
+
+
+# Game mode 2:
+
+In this mode, two people will be playing. One player will connect to the Robber and ther other player will connect to the Robber over the network. The rules of the game are the same.
 
 ### Contributions
 
 *In this subsection, I want to know what is new/unique/interesting about your project.*
+
+This project encorporates gamification into the ROS world. Our team is able to demonstrate an understanding of components of ROS such as networking, visualization, manual and autonomous control, finitie state machines, and logic all while creating a fun, interactive program.
 
 ---
 
@@ -50,7 +73,41 @@ List of Prerequisite Software:
 
 *The expectation is that the user should only have to follow these steps one time.  For example, if your project requires generating Gazebo mazes, the task of INSTALLING the maze generation code should go in this section.*
 
----
+1. Create the Package:
+    ```
+    cd ~/catkin_ws/src
+    catkin_create_pkg $$$$$$$ rospy geometry_msgs sensor_msgs
+    ```
+2. Create our `scripts`, and `robots` directories:
+    ```
+    cd ~/catkin_ws/src/$$$$$$$
+    mkdir scripts, robots
+    ```
+3. Get the source code from the course github site:
+    ```
+    cd ~/Downloads
+    rm -rf fall2019
+    git clone https://github.com/IE-482-582/course-project-brandon_and_ben.git
+    ```
+4. Copy the Python scripts and robots to our project workspace
+    ```
+    cd course-project-brandon_and_ben
+    cp scripts/* ~/catkin_ws/src/$$$$$$$/scripts/
+    cp robots/* ~/catkin_ws/src/$$$$$$$/robots/
+    ```
+    
+5. Make our Python scripts executable
+    ```
+    cd ~catkin_ws/src/$$$$$$$
+    chmod +x *.py
+    ```
+    
+6. Compile/make our package
+    ```
+    cd ~catkin_ws
+    catkin_make
+    ```
+--
 
 ## Running the Code
 
@@ -60,7 +117,47 @@ List of Prerequisite Software:
 
 *NOTE 2:  If you're generating mazes, for example, the task of GENERATING a new maze would go here.*
 
----
+# Mode 1
+
+We'll need ## (#) terminal windows
+
+1. Launch the course
+    ```
+    cd ~catkin_ws/src/$$$$$$$/scripts
+    roslaunch $$$$$$$ $$$$$$$
+    ```
+    
+2. In a new terminal, launch the controls for the Robber
+    ```
+    cd ~/catkin_ws/src/$$$$$$$/scripts
+    roslaunch $$$$$$$ keyboard_teleop.launch
+    ```
+    
+3. In a new terminal, launch the robber.py script
+    ```
+    cd ~/catkin_ws/src/$$$$$$$/scripts
+    rosrun $$$$$$$ robber.py
+    ```
+    
+For a more realistic experience, it is reccomended that you go full screen on the ### window and play the game from the first person perspective of the robber. Do keep the robber.py terminal in view though so you know when you have got the gold.
+    
+4. In a new terminal, launch the copbot.py script
+
+    ```
+    cd ~catkin_ws/src/$$$$$$$/scripts
+    rosrun $$$$$$$ copbot.py
+    ```
+
+Navigate back to the controls terminal so that your keystrokes are recorded. You can stay inside the terminal while it is minimized to allow for a better view of the ### window and robber.py terminal.
+
+5. Play the game and have fun!
+
+# Mode 2
+
+We'll need ## (#) terminal windows
+
+
+
 
 ## Measures of Success
 
