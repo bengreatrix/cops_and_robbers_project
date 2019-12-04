@@ -6,40 +6,60 @@
 
 --- 
 
-# {Provide a Project Title Here}
+# IE482 Project - Cops and Robbers
 
 Team Members:
-- {Member 1 Name}, {Member 1 email}
-- {Member 2 Name}, {Member 2 email}
+- Ben Greatrix, bengreatrix@buffalo.edu
+- Brandon Andreu, bandreu@buffalo.edu
 
 --- 
 
 ## Project Objective
-{What are you proposing to do?}
+The inspiration behind this project is the children's game known as cops and robbers. Inside of Gazebo we plan to simulate 2 Turtlebots. One Turtlebot will be the "Copbot" and it will patrol the area in search of a "criminal". The criminal will be another Turtlebot. The goal of the criminal is to steal one of two pieces of goal and escape the area without the Copbot catching him. The goal of the Copbot is to find the criminal and capture him before he can get away with the gold.
 
 
 ## Contributions
-{What is new/unique/interesting about this project?}
+There will be two modes for this game. In the firt mode, the area will be small and simple. The criminal will be controlled manually by a player and the Copbot will autonomosly patrol the area. If you are seen by the Copbot he will follow and if he gets close enough you will have been "captured" and the game will be over.
+
+In the second mode, the area will be larger and more complex. The criminal will still be controlled manually by a player but the Coptbot will also be controlled manually by a second player over a network. The same game rules will apply.
+
+This project demostrates the understaing of ...
 
 
 ## Project Plan
-{How will we do it?  What resources will we use (e.g., specific online materials, specific chapters from the textbook, etc.)?}
+We will achieve with the help of:
+- The textbook (with special attention paid towards chapters 6, 7, 8, and 12)
+- The IE-482-582/fall2019 repository (with special attention paid towards 03_Wanderbot, 05_Teleopbot, and 06_Followbot)
+- The IE-482-582/fall2018 repository (with special attention paid towards (09_redball_code, maze_generator, and world_demo)
+- The optimatorlab/turtlebotrace repository
+- ROS wiki
+- Youtube
+
+A modified version of the turtlbotrace scripts will be used to launch the gazebo worlds with multiple Turtlebots. The Copbot will wander the area with a modified version of the wander.py script from chapter 7. The Copbot will know when it has seen the Robber and follow it with a modified version of the move_robot.py script from the 09_redball_code repositiry. The Turtlebots will be controlled using a modified version of the keyboard_teleop launch file and they will be networked using .............
 
 
 ## Milestones/Schedule Checklist
 {What are the tasks that you need to complete?  Who is going to do them?  When will they be completed?}
 - [x] Complete this proposal document.  *Due Oct. 25*
-- [ ] {add tasks here}
-- [ ] Create progress report.  *Due Nov. 25*
-- [ ] {add more tasks here}
-- [ ] Create final presentation.  *Due Dec. 6*
-- [ ] {you might have some more tasks here}
-- [ ] Provide system documentation (README.md).  *Due Dec. 13*
+- [ ] Generate complex gazebo world
+- [ ] Color Turtlebot bases two different colors
+- [ ] Spawn two turtlebots in Gazebo
+- [ ] Allow multiple Turtlebots to be controlled at the same time (Not over a network)
+- [ ] Allow Copbot to know when the Robber is in its feild of view
+- [ ] Generate simple gazebo world
+- [ ] Allow Copbot to autonomously wander the area in search of the Robber
+- [ ] Allow Copbot to autonomosly follow the Robber when he is in its field of view
+- [ ] Allow Robber to know its coordinates within the area
+- [ ] Write final launch files for the gazebo worlds
+- [ ] Write final launch files for controlling the Turtlebots
+- [ ] Write final script for the Robber
+- [ ] Write final script for the Copbot
+- [ ] Complete final report.  *Due Dec. 16*
+- [ ] Submit final presentation  *Due Dec. 16*
 
 
 ## Measures of Success
-{How will you know you succeeded?  If you were to receive partial credit, what should we look for?}
-
+The project will be considered a success if we are able to check off all the items in the checklist. Partial crdit may be given in accordance to how many items we were able to check off the checklist.
 
 ---
 **A Sample Proposal Appears Below**
