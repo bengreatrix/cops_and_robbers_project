@@ -27,7 +27,7 @@ Team Members:
 
 This project was inspired from the children's game known as cops and robbers. There are two game modes.
 
-# Game Mode 1:
+### Game Mode 1:
 
 In this mode, only one person will be playing. You will be contolling a Turtlebot which is a "Robber". Your goal is to first steal a piece of gold and then exit the area, all while not being discovered by the autonomoaly controlled "Copbot". You must drive up close enough to one of the gold ingets shown below.
 
@@ -44,11 +44,11 @@ You must then drive into one of the two exits shown below.
 Be careful not to be caught by the Copbot. If the Copbot gets too close to you (roughly a half meter) you will see the message below in your Robber.py terminal and you will lose the game.
 
 
-# Game mode 2:
+### Game mode 2:
 
 In this mode, two people will be playing. One player will connect to the Robber and ther other player will connect to the Robber over the network. The rules of the game are the same.
 
-### Contributions
+## Contributions
 
 *In this subsection, I want to know what is new/unique/interesting about your project.*
 
