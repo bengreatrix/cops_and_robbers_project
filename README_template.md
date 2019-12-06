@@ -8,7 +8,7 @@ This document (`README_template.md`) provides a template for your **final** docu
 
 ---
 
-# [Provide a Brief Descriptive Project Title Here]
+# Cops & Robbers Simulation
 
 Project Name: [provide catkin_ws name here].  
 *For example, `followbot`, `wanderbot`, and `redball` are project names we've used in class.  When I install your code, I want to know where I'll find it in `~/catkin_ws/src/`*
@@ -29,7 +29,7 @@ This project was inspired from the children's game known as cops and robbers. Th
 
 ### Game Mode 1:
 
-In this mode, only one person will be playing. You will be contolling a Turtlebot which is a "Robber". Your goal is to first steal a piece of gold and then exit the area, all while not being discovered by the autonomoaly controlled "Copbot". You must drive up close enough to one of the gold ingets shown below.
+In this mode, only one person will be playing. You will be contolling a Turtlebot which is a "Robber". Your goal is to first steal a piece of gold and then exit the area, all while not being discovered by the autonomously controlled "Copbot". You must drive up close enough to one of the gold ingets shown below.
 
 *insert image*
 
@@ -46,7 +46,7 @@ Be careful not to be caught by the Copbot. If the Copbot gets too close to you (
 
 ### Game Mode 2:
 
-In this mode, two people will be playing. One player will connect to the Robber and ther other player will connect to the Robber over the network. The rules of the game are the same.
+In this mode, two people will be playing. One player will be the Copbot while the other player will connect to the Robber over a linked network. The rules of the game are the same.
 
 ## Contributions
 
@@ -63,9 +63,9 @@ Your target audience should be a student from the Fall 2020 class.
 You may assume that the student has ROS Indigo installed on Ubuntu 14.04.*
 
 List of Prerequisite Software:
-- [software 1] 
-- [software 2]
-- [etc.]
+- Gazebo 
+- Ubuntu 14.04
+- ROS Indigo
 *This is just a list, not installation instructions.  The idea is to provide a summary of the additional software/packages that need to be installed.  Instructions go below.*
 
 
@@ -76,29 +76,29 @@ List of Prerequisite Software:
 1. Create the Package:
     ```
     cd ~/catkin_ws/src
-    catkin_create_pkg $$$$$$$ rospy geometry_msgs sensor_msgs
+    catkin_create_pkg brandon_and_ben rospy geometry_msgs sensor_msgs nav_msgs
     ```
 2. Create our `scripts`, and `robots` directories:
     ```
-    cd ~/catkin_ws/src/$$$$$$$
+    cd ~/catkin_ws/src/brandon_and_ben
     mkdir scripts, robots
     ```
 3. Get the source code from the course github site:
     ```
     cd ~/Downloads
-    rm -rf fall2019
+    rm -rf fall2019/brandon_and_ben
     git clone https://github.com/IE-482-582/course-project-brandon_and_ben.git
     ```
 4. Copy the Python scripts and robots to our project workspace
     ```
     cd course-project-brandon_and_ben
-    cp scripts/* ~/catkin_ws/src/$$$$$$$/scripts/
-    cp robots/* ~/catkin_ws/src/$$$$$$$/robots/
+    cp scripts/* ~/catkin_ws/src/brandon_and_ben/scripts/
+    cp robots/* ~/catkin_ws/src/brandon_and_ben/robots/
     ```
     
 5. Make our Python scripts executable
     ```
-    cd ~catkin_ws/src/$$$$$$$
+    cd ~catkin_ws/src/brandon_and_ben/scripts/
     chmod +x *.py
     ```
     
@@ -123,20 +123,20 @@ We'll need ## (#) terminal windows
 
 1. Launch the course
     ```
-    cd ~catkin_ws/src/$$$$$$$/scripts
-    roslaunch $$$$$$$ $$$$$$$
+    cd ~catkin_ws/src/brandon_and_ben/scripts
+    roslaunch brandon_and_ben $$$$$$$
     ```
     
 2. In a new terminal, launch the controls for the Robber
     ```
-    cd ~/catkin_ws/src/$$$$$$$/scripts
-    roslaunch $$$$$$$ keyboard_teleop.launch
+    cd ~/catkin_ws/src/brandon_and_ben/scripts
+    roslaunch brandon_and_ben keyboard_teleop.launch
     ```
     
 3. In a new terminal, launch the robber.py script
     ```
-    cd ~/catkin_ws/src/$$$$$$$/scripts
-    rosrun $$$$$$$ robber.py
+    cd ~/catkin_ws/src/brandon_and_ben/scripts
+    rosrun brandon_and_ben robber.py
     ```
     
 For a more realistic experience, it is reccomended that you go full screen on the ### window and play the game from the first person perspective of the robber. Do keep the robber.py terminal in view though so you know when you have got the gold.
@@ -144,8 +144,8 @@ For a more realistic experience, it is reccomended that you go full screen on th
 4. In a new terminal, launch the copbot.py script
 
     ```
-    cd ~catkin_ws/src/$$$$$$$/scripts
-    rosrun $$$$$$$ copbot.py
+    cd ~catkin_ws/src/brandon_and_ben/scripts
+    rosrun brandon_and_ben copbot.py
     ```
 
 Navigate back to the controls terminal so that your keystrokes are recorded. You can stay inside the terminal while it is minimized to allow for a better view of the ### window and robber.py terminal.
@@ -168,15 +168,6 @@ We'll need ## (#) terminal windows
 <TR>
 	<TH>Measure of Success (from your PROPOSAL)</TH>
 	<TH>Status (completion percentage)</TH>
-</TR>
-<TR>
-	<TD>Install PR2 ROS Indigo Package</TD>
-	<TD>100%</TD>
-</TR>
-<TR>
-	<TD>Write brain reader software to move the robot</TD>
-	<TD>25% (brain reader software detects brain waves, but does not translate to ROS commands.)</TD>
-	
 </TR>
 <TR>
 	<TD>Complete proposal document</TD>
