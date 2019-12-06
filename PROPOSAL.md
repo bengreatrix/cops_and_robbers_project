@@ -23,7 +23,7 @@ There will be two modes for this game. In the firt mode, the area will be small 
 
 In the second mode, the area will be larger and more complex. The criminal will still be controlled manually by a player but the Coptbot will also be controlled manually by a second player over a network. The same game rules will apply.
 
-This project demostrates the understaing of ...
+This project demostrates the understaing of how to network computers, subcribe/publish to topics, edit .urdf files, model worlds in gazebo, apply logic statements to robots, and use states to control robots.
 
 
 ## Project Plan
@@ -41,19 +41,20 @@ A modified version of the turtlbotrace scripts will be used to launch the gazebo
 ## Milestones/Schedule Checklist
 {What are the tasks that you need to complete?  Who is going to do them?  When will they be completed?}
 - [x] Complete this proposal document.  *Due Oct. 25*
-- [ ] Generate complex gazebo world
-- [ ] Color Turtlebot bases two different colors
-- [ ] Spawn two turtlebots in Gazebo
-- [ ] Allow multiple Turtlebots to be controlled at the same time (Not over a network)
-- [ ] Allow Copbot to know when the Robber is in its feild of view
-- [ ] Generate simple gazebo world
-- [ ] Allow Copbot to autonomously wander the area in search of the Robber
-- [ ] Allow Copbot to autonomosly follow the Robber when he is in its field of view
-- [ ] Allow Robber to know its coordinates within the area
-- [ ] Write final launch files for the gazebo worlds
-- [ ] Write final launch files for controlling the Turtlebots
-- [ ] Write final script for the Robber
-- [ ] Write final script for the Copbot
+- [x] Generate complex gazebo world.  *Due Sep. 24*
+- [x] Color Turtlebot bases two different colors.  *Due Sep. 26*
+- [x] Spawn two turtlebots in Gazebo.  *Due Sep. 28*
+- [x] Allow multiple Turtlebots to be controlled at the same time (Not over a network).  *Due Sep. 29*
+- [x] Allow Copbot to know when the Robber is in its feild of view.  *Due Dec. 1*
+- [x] Generate simple gazebo world.  *Due Dec. 1*
+- [ ] Network Turtlebots.  *Due Dec. 2*
+- [ ] Allow Copbot to autonomously wander the area in search of the Robber.  *Due Dec.3*
+- [ ] Allow Copbot to autonomosly follow the Robber when he is in its field of view.  *Due Dec. 4*
+- [x] Allow Robber to know its coordinates within the area.  *Due Dec. 4*
+- [x] Write final launch files for the gazebo worlds.  *Due Dec. 5*
+- [x] Write final launch files for controlling the Turtlebots.  *Due Dec. 6*
+- [ ] Write final script for the Robber.  *Due Dec. 8*
+- [ ] Write final script for the Copbot.  *Due Dec. 8*
 - [ ] Complete final report.  *Due Dec. 16*
 - [ ] Submit final presentation  *Due Dec. 16*
 
