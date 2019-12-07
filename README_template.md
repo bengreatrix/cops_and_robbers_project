@@ -104,7 +104,7 @@ List of Prerequisite Software:
     
 6. Compile/make our package
     ```
-    cd ~catkin_ws
+    cd ~/catkin_ws
     catkin_make
     ```
 --
