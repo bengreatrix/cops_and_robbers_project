@@ -20,14 +20,14 @@ class Position:
 				if  ((1 < robot1pose.pose.position.x < 3) and (0 < robot1pose.pose.position.y < 2)) or ((21 < robot1pose.pose.position.x < 23) and (13 < robot1pose.pose.position.y < 15)):
 					print('\n \n \n \n \n \n Youve got the gold! Make your way to the exit!')
 					self.state = 2
-				if (abs(robot1pose.pose.position.x - robot2pose.pose.position.x) <= .5) or (abs(robot1pose.pose.position.y - robot2pose.pose.position.y) <= .5):
+				if (abs(robot1pose.pose.position.x - robot2pose.pose.position.x) <= .5) and (abs(robot1pose.pose.position.y - robot2pose.pose.position.y) <= .5):
 					print('\n \n \n \n \n \n Youve been caught! You Lose! Game Over!')
 					self.state = 3
 			if self.state == 2:
 				if ((13 < robot1pose.pose.position.x < 15) and (-3 < robot1pose.pose.position.y < 0)) or ((13 < robot1pose.pose.position.x < 15) and (14 < robot1pose.pose.position.y < 16)):
 					print('\n \n \n \n \n \n You win! Game Over!')
 					self.state = 3
-				if (abs(robot1pose.pose.position.x - robot2pose.pose.position.x) <= .5) or (abs(robot1pose.pose.position.y - robot2pose.pose.position.y) <= .5):
+				if (abs(robot1pose.pose.position.x - robot2pose.pose.position.x) <= .5) and (abs(robot1pose.pose.position.y - robot2pose.pose.position.y) <= .5):
 					print('\n \n \n \n \n \n Youve been caught! You Lose! Game Over!')
 					self.state = 3
 			self.rate.sleep()   
