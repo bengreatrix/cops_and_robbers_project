@@ -289,38 +289,39 @@ If a student wanted to imrove upon this project, some suggestions are as follows
 *What resources did you use to help finish this project?*
 - Include links to Websites.  Explain what this Website enabled you to accomplish.
 - Include references to particular chapters/pages from the ROS book.  Why was each chapter necessary/helpful?
+
 From The tetbook:
 - Chapter 6
 	helped with understanding how to connect and use the camera on the Turtlebots
--Chapter 7
+- Chapter 7
 	helped with getting started on the logicstatements for a wanderbot
--Chapter 8
+- Chapter 8
 	helped with controlling a robot using the keypad
--Chapter 12
+- Chapter 12
 	helped with understadning the masking used to develope a followbot
 	
 From Github:
--03_wanderbot
--	used a variation of the wander.py scripts in the final project
--05 Teleopbot
--	used the teleop_key.py script for the controls of robots in mode 2 and a variation of the keys_to_twist.py scripts in mode 1
--06_Followbot
+- 03_wanderbot
+	used a variation of the wander.py scripts in the final project
+- 05 Teleopbot
+	used the teleop_key.py script for the controls of robots in mode 2 and a variation of the keys_to_twist.py scripts in mode 1
+- 06_Followbot
 	used a variation  of the move_robot.py scripts in mode 1
--09_redball_code
+- 09_redball_code
 	helped with understanding how to vidualize the red base of the robber
--maze_generator
+- maze_generator
 	used to generate the courses for modes 1 and 2
--world_demo
+- world_demo
 	helped understand how the courses were being generated
--optimatorlab/turtlebotrace
+- optimatorlab/turtlebotrace
 	helped with understanding how to edit the urdf files for the turtlebots so the bases could be different colors
 
 From ROS wiki:
--https://answers.ros.org/question/261782/how-to-use-getmodelstate-service-from-gazebo-in-python/
+- https://answers.ros.org/question/261782/how-to-use-getmodelstate-service-from-gazebo-in-python/
 	helped with figuring out how to get coordinates of Turtlebots in gazebo world
 
 From Youtube:
--https://www.youtube.com/watch?v=WqK2IY5_9OQ&feature=youtu.be
+- https://www.youtube.com/watch?v=WqK2IY5_9OQ&feature=youtu.be
 	walked through code behind getting coordinates of multiple objects/models in gazebo
 
 
