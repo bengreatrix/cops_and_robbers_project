@@ -302,7 +302,7 @@ From The tetbook:
 	
 From Github:
 - 03_wanderbot
-	used a variation of the wander.py scripts in the final project
+-- used a variation of the wander.py scripts in the final project
 - 05 Teleopbot
 	used the teleop_key.py script for the controls of robots in mode 2 and a variation of the keys_to_twist.py scripts in mode 1
 - 06_Followbot
