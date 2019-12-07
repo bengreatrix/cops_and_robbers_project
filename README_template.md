@@ -204,6 +204,11 @@ We'll need ## (#) terminal windows
 	
 </TR>
 <TR>
+	<TD>Network Turtlebots</TD>
+	<TD>100%</TD>
+	
+</TR>
+<TR>
 	<TD>Allow Copbot to autonomously wander the area in search of the Robber</TD>
 	<TD>100%</TD>
 	
