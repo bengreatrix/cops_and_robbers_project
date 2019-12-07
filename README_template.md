@@ -90,7 +90,7 @@ List of Prerequisite Software:
     ```
 4. Copy the Python scripts and robots to our project workspace
     ```
-    cd course-project-brandon_and_ben
+    cd code/course-project-brandon_and_ben/
     cp scripts/* ~/catkin_ws/src/brandon_and_ben/scripts/
     cp robots/* ~/catkin_ws/src/brandon_and_ben/robots/
     ```
