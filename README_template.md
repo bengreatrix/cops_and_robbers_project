@@ -38,7 +38,7 @@ Once you are close enough, a message will appear in the Robber.py terminal alert
 
 You must then drive into one of the two exits shown below.
 
-*insert*
+*insert image*
 
 Be careful not to be caught by the Copbot. If the Copbot gets too close to you (roughly a half meter) you will see the message below in your Robber.py terminal and you will lose the game.
 
