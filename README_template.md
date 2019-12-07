@@ -10,8 +10,7 @@ This document (`README_template.md`) provides a template for your **final** docu
 
 # Cops & Robbers Simulation
 
-Project Name: [provide catkin_ws name here].  
-*For example, `followbot`, `wanderbot`, and `redball` are project names we've used in class.  When I install your code, I want to know where I'll find it in `~/catkin_ws/src/`*
+Project Name: brandon_and_ben 
 
 Team Members:
 - [Ben Greatrix, bengreat@buffalo.edu]
