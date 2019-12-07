@@ -8,5 +8,5 @@
   </include>
 
   <!-- include our robots -->
-  <include file="$(find brandon_and_ben)/scripts/robots_ben.launch"/>
+  <include file="$(find brandon_and_ben)/scripts/Mode_2_robots.launch"/>
 </launch>
