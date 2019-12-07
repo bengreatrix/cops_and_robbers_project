@@ -273,7 +273,7 @@ We now have a solid understanding of editing urdf files for models, subscribing/
 
 If a student wanted to imrove upon this project, some suggestions are as follows:
 - Improve the speed at which the program runs
-- improve upon the ## and ## script that the Copbot uses so that it is better at pursuing the Robber
+- improve upon the copbot.py script that the Copbot uses so that it is better at pursuing the Robber
 - Make the program more user friendly (i.e. encorporate everything into one launch file)
 - Build a map for the copbot so it can autonomsly pursue the robber in the complex area
 
