@@ -292,13 +292,13 @@ If a student wanted to imrove upon this project, some suggestions are as follows
 
 From The tetbook:
 - Chapter 6
-	helped with understanding how to connect and use the camera on the Turtlebots
+	- helped with understanding how to connect and use the camera on the Turtlebots
 - Chapter 7
-	helped with getting started on the logicstatements for a wanderbot
+	- helped with getting started on the logicstatements for a wanderbot
 - Chapter 8
-	helped with controlling a robot using the keypad
+	- helped with controlling a robot using the keypad
 - Chapter 12
-	helped with understadning the masking used to develope a followbot
+	- helped with understadning the masking used to develope a followbot
 	
 From Github:
 - 03_wanderbot
