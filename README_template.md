@@ -81,7 +81,7 @@ List of Prerequisite Software:
 2. Create our `scripts`, and `robots` directories:
     ```
     cd ~/catkin_ws/src/brandon_and_ben
-    mkdir scripts, robots
+    mkdir scripts robots
     ```
 3. Get the source code from the course github site:
     ```
