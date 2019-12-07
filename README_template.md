@@ -96,10 +96,10 @@ List of Prerequisite Software:
     cp robots/* ~/catkin_ws/src/brandon_and_ben/robots/
     ```
     
-5. Make our Python scripts executable
+5. Make everything executable
     ```
-    cd ~catkin_ws/src/brandon_and_ben/scripts/
-    chmod +x *.py
+    cd ~catkin_ws/src/brandon_and_ben/
+    chmod +x *
     ```
     
 6. Compile/make our package
