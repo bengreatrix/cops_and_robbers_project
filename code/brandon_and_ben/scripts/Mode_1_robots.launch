@@ -1,0 +1,41 @@
+<launch>
+	<!-- No namespace here as we will share this description. 
+	   Access with slash at the beginning -->
+
+<!--
+	<arg name="base" value="kobuki"/>
+	<arg name="stacks" value="hexagons"/>
+	<arg name="3d_sensor" value="kinect"/>
+-->
+
+	<!--
+		NOTE:  The `-Y 1.57` tag in the poses below tell the robots to start by facing north.
+	-->
+	
+	<!-- BEGIN ROBOT 1-->
+	<group ns="robot1">
+		<param name="tf_prefix" value="robot1_tf" />
+		<include file="$(find brandon_and_ben)/scripts/one_robot_new.launch" >
+			<arg name="init_pose" value="-x 8 -y -8 -z 0 -Y 2.60" />
+			<arg name="robot_name"  value="Robot1" />
+			<arg name="base" value="kobuki"/>
+			<arg name="stacks" value="hexagons"/>
+			<arg name="3d_sensor" value="kinect"/>	
+			<arg name="color" value="red"/>	
+		</include>
+	</group>
+	
+	<!-- BEGIN ROBOT 2-->  
+	<group ns="robot2">
+		<param name="tf_prefix" value="robot2_tf" />
+		<include file="$(find brandon_and_ben)/scripts/one_robot_new.launch" >
+			<arg name="init_pose" value="-x -8 -y 8 -z 0 -Y -.77" />
+			<arg name="robot_name"  value="Robot2" />
+			<arg name="base" value="kobuki"/>
+			<arg name="stacks" value="hexagons"/>
+			<arg name="3d_sensor" value="kinect"/>
+			<arg name="color" value="blue"/>	
+		</include>
+	</group> 
+
+</launch>
