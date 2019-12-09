@@ -30,13 +30,13 @@ This project was inspired from the children's game known as cops and robbers. Th
 
 ![Game_Annotation](Images/Game_Annotation.JPG)
 
-In this mode, only one person will be playing. You will be contolling a Turtlebot which is a "Robber". TherRobber is always the Turtlebot with the red base and the cop is always the Turtlebot with the blue base. Your goal as the robber is to first steal a piece of gold and then exit the area, all while not being discovered by the autonomously controlled "Copbot".
+In this mode, only one person will be playing. You will be contolling a Turtlebot which is a "Robber". The Robber is always the Turtlebot with the red base and the cop is always the Turtlebot with the blue base. Your goal as the robber is to first steal a piece of gold and then exit the area, all while not being discovered by the autonomously controlled "Copbot".
 
 Once you are close enough, a message will appear in the Robber.py terminal alerting you that you have the gold.
 
 ![Youve_got_The_gold](Images/Youve_got_the_gold.JPG)
 
-You must then drive into one of the two green exits shown below.
+You must then drive into one of the two green exits.
 
 Be careful not to be caught by the Copbot. If the Copbot gets too close to you (roughly a half meter) you will see the message below in your Robber.py terminal, signifying that you have lost the game.
 
