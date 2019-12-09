@@ -332,4 +332,6 @@ From Youtube:
 - https://www.youtube.com/watch?v=WqK2IY5_9OQ&feature=youtu.be
 	- walked through code behind getting coordinates of multiple objects/models in gazebo
 
+- https://www.youtube.com/watch?v=RFNNsDI2b6c
+	- walked through how to read and use LaserScan data
 
