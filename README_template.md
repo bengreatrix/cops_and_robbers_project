@@ -81,6 +81,10 @@ List of Prerequisite Software:
     ```
     cd ~/catkin_ws/src/brandon_and_ben
     mkdir scripts robots
+    cd ~/catkin_ws/src/brandon_and_ben/robots
+    mkdir meshes urdf
+    cd ~/catkin_ws/src/brandon_and_ben/robots/meshes
+    mkdir images
     ```
 3. Get the source code from the course github site:
     ```
