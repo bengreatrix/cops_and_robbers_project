@@ -48,19 +48,24 @@ A modified version of the turtlbotrace scripts will be used to launch the gazebo
 - [x] Allow Copbot to know when the Robber is in its feild of view.  *Due Dec. 1*
 - [x] Generate simple gazebo world.  *Due Dec. 1*
 - [ ] Network Turtlebots.  *Due Dec. 2*
-- [ ] Allow Copbot to autonomously wander the area in search of the Robber.  *Due Dec.3*
-- [ ] Allow Copbot to autonomosly follow the Robber when he is in its field of view.  *Due Dec. 4*
+- [x] Allow Copbot to autonomously wander the area in search of the Robber.  *Due Dec.3*
+- [x] Allow Copbot to autonomosly follow the Robber when he is in its field of view.  *Due Dec. 4*
 - [x] Allow Robber to know its coordinates within the area.  *Due Dec. 4*
 - [x] Write final launch files for the gazebo worlds.  *Due Dec. 5*
 - [x] Write final launch files for controlling the Turtlebots.  *Due Dec. 6*
-- [ ] Write final script for the Robber.  *Due Dec. 8*
-- [ ] Write final script for the Copbot.  *Due Dec. 8*
-- [ ] Complete final report.  *Due Dec. 16*
+- [x] Write final script for the Robber.  *Due Dec. 8*
+- [x] Write final script for the Copbot.  *Due Dec. 8*
+- [x] Complete final report.  *Due Dec. 16*
 - [ ] Submit final presentation  *Due Dec. 16*
 
 
 ## Measures of Success
-The project will be considered a success if we are able to check off all the items in the checklist. Partial crdit may be given in accordance to how many items we were able to check off the checklist.
+The project will be considered a success if we are able to check off all the items in the checklist. Partial crdit may be given in accordance to how many items we were able to check off the checklist. Some additional measures off sucess are:
+
+- [] View robot models in gazebo with appropriate colors.
+- [] Show the camera view of the Robber.
+- [] Demonstarte that the Copbot autonomously follows the robber in mode 1.
+- [] Hvae classmates follow the steps in the README to sucessfully run the simulation without any help.
 
 ---
 **A Sample Proposal Appears Below**
