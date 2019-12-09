@@ -1,10 +1,3 @@
-*NOTE TO STUDENTS:  This is a template for your **proposal**.  Items wrapped inside `{}` should be replaced accordingly.*
-
-*You will have 5 minutes to present your proposal document on Friday, Oct. 25.*
-
-**Please delete this line, and the comments above.**
-
---- 
 
 # IE482 Project - Cops and Robbers
 
@@ -35,7 +28,7 @@ We will achieve with the help of:
 - ROS wiki
 - Youtube
 
-A modified version of the turtlbotrace scripts will be used to launch the gazebo worlds with multiple Turtlebots. The Copbot will wander the area with a modified version of the wander.py script from chapter 7. The Copbot will know when it has seen the Robber and follow it with a modified version of the move_robot.py script from the 09_redball_code repositiry. The Turtlebots will be controlled using a modified version of the keyboard_teleop launch file and they will be networked using .............
+A modified version of the turtlbotrace scripts will be used to launch the gazebo worlds with multiple Turtlebots. The Copbot will wander the area with a modified version of the wander.py script from chapter 7. The Copbot will know when it has seen the Robber and follow it with a modified version of the move_robot.py script from the 09_redball_code repositiry. The Turtlebots will be controlled using a modified version of the keyboard_teleop.py script and they will be networked using .............
 
 
 ## Milestones/Schedule Checklist
@@ -62,55 +55,7 @@ A modified version of the turtlbotrace scripts will be used to launch the gazebo
 ## Measures of Success
 The project will be considered a success if we are able to check off all the items in the checklist. Partial crdit may be given in accordance to how many items we were able to check off the checklist. Some additional measures off sucess are:
 
-- [] View robot models in gazebo with appropriate colors.
-- [] Show the camera view of the Robber.
-- [] Demonstarte that the Copbot autonomously follows the robber in mode 1.
-- [] Hvae classmates follow the steps in the README to sucessfully run the simulation without any help.
-
----
-**A Sample Proposal Appears Below**
----
-
-# Creating a Gazebo Model of the Duckiebot
-
-Team Members:
-- Chase Murray, cmurray3@buffalo.edu
-- Jane Student, j@buffalo.edu
-
-
-## Project Objective
-The goal of this project is to create a Gazebo model of the Duckiebot. This model will accurately reflect the dimensions of the Duckiebot, will include the Duckiebot's sensors (a fisheye lens camera and a magnetometer), and will have the same drive train (two motors controlling the two motorized wheels).
-
-
-## Contributions
-There are currently no Gazebo models of this robot.  By creating such a model, we will be able to test control algorithms in a simulated environment (without the need for the physical robot itself).  However, after training the control algorithms in Gazebo, it will be easy to execute them on a real Duckiebot, since the simulated version will be an accurate representation.
-
-
-## Project Plan
-The textbook contains two chapters (Chapters 15--17) that describe how to build a custom robot.
-However, these chapters do not discuss the use of a fisheye lens.  We will use the ros.org Website to learn how to model such cameras.
-We will also consult the Duckiebot specs to determine the dimensions and weight of the robot, as well as the capabilities of the motors.
-
-
-## Milestones/Schedule Checklist
-- [x] Complete this proposal document.  *Due Oct. 25*
-- [ ] Capture the specs of the actual/physical robot.  *JS, Nov. 16*
-- [ ] Build a sample model using the textbook examples. *CM, Nov. 16*
-- [ ] Modify the sample model to match the specs of the Duckiebot.  *CM, Nov. 19*
-- [ ] Add a fisheye lens camera. *JS, Nov. 20*
-- [ ] Create progress report.  *Due Nov. 25*
-- [ ] Create Gazebo .launch files to test the robot.  *CM, Dec. 1*
-- [ ] Create a simple controller to test the interaction with the robot. *JS, Dec. 3*
-- [ ] Create final presentation.  *Due Dec. 5*
-- [ ] Update documentation based on presentation feedback. *CM, Dec. 7*
-- [ ] Provide system documentation (README.md).  *Due Dec. 13*
-
-
-## Measures of Success
-- [ ] View robot model in Gazebo.
-- [ ] Demonstrate that the fisheye lens camera is appropriately distorted.
-- [ ] Demonstrate that robot moves when given commands.
-- [ ] Implement code on a real Duckiebot.
-- [ ] Have a classmate follow the steps in the README to successfully run the simulation without any help.
-
-
+- [ ] View robot models in gazebo with appropriate colors.
+- [ ] Show the camera view of the Robber.
+- [ ] Demonstarte that the Copbot autonomously follows the robber in mode 1.
+- [ ] Hvae classmates follow the steps in the README to sucessfully run the simulation without any help.
