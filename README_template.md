@@ -219,12 +219,12 @@ We'll need ## (#) terminal windows
 </TR>
 <TR>
 	<TD>Allow Copbot to autonomously wander the area in search of the Robber</TD>
-	<TD>50% Haven't finalized the code yet</TD>
+	<TD>100%</TD>
 	
 </TR>
 <TR>
 	<TD>Allow Copbot to autonomously follow the Robber when he is in its field of view</TD>
-	<TD>50% Haven't finalized the code yet</TD>
+	<TD>100%</TD>
 	
 </TR>
 <TR>
@@ -249,7 +249,7 @@ We'll need ## (#) terminal windows
 </TR>
 <TR>
 	<TD>Write final script for the Copbot</TD>
-	<TD>50% Need to complete a few more things for the following component</TD>
+	<TD>100%</TD>
 	
 </TR>
 <TR>
