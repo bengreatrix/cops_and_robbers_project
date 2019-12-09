@@ -97,9 +97,9 @@ List of Prerequisite Software:
     cd course-project-brandon_and_ben/code/course-project-brandon_and_ben
     cp scripts/* ~/catkin_ws/src/brandon_and_ben/scripts
     cp robots/* ~/catkin_ws/src/brandon_and_ben/robots
-    cp robots/urdf* ~/catkin_ws/src/brandon_and_ben/robots/urdf
-    cp robots/meshes* ~/catkin_ws/src/brandon_and_ben/robots/meshes
-    cp robots/meshes/images* ~/catkin_ws/src/brandon_and_ben/robots/meshes/images
+    cp robots/urdf/* ~/catkin_ws/src/brandon_and_ben/robots/urdf
+    cp robots/meshes/* ~/catkin_ws/src/brandon_and_ben/robots/meshes
+    cp robots/meshes/images/* ~/catkin_ws/src/brandon_and_ben/robots/meshes/images
     ```
     
 5. Make everything executable
