@@ -1,30 +1,17 @@
-This document (`README_template.md`) provides a template for your **final** documentation (**NOT YOUR PROPOSAL**).
-
-- Your final document should be named simply `README.md`.  
-- I've left several comments below.  These should obviously be removed from your document.
-- You may add additional sections as you see fit, but you should not **remove** any of the sections defined below.
-- Any supplementary images should go in a directory called `Images`.  See [README.md](README.md) for more information about the required directory structure.
-- Please keep in mind that the audience for this document should be students in the Fall 2019 section of this class.  (In other words, write this such that 3-month-younger you would've been able to utilize this document.)
-
----
 
 # Cops & Robbers Simulation
 
 Project Name: brandon_and_ben 
 
 Team Members:
-- [Ben Greatrix, bengreat@buffalo.edu]
-- [Brandon Andreu, bandreu@buffalo.edu]
+- Ben Greatrix, bengreat@buffalo.edu
+- Brandon Andreu, bandreu@buffalo.edu
 
 ---
 
 ## Project Description
 
-*In this section, describe what your project does. This should be descriptive.  Someone from next year's class should be able to fully understand the aims and scope of your project. I highly recommend using pictures to help explain things.  Maybe even post a YouTube video showing your code in action.*
-
-*NOTE:  This is not a proposal.  This is a final report describing your actual completed project.*
-
-This project was inspired from the children's game known as cops and robbers. There are two game modes.
+This project was inspired from the children's game known as cops and robbers. There are two game modes. An introduction and description of each game mode can be acessed through the link below.
 
 ### Game Mode 1:
 
@@ -42,13 +29,15 @@ Be careful not to be caught by the Copbot. If the Copbot gets too close to you (
 
 ![youve_been_caught](Images/youve_been_caught.JPG)
 
+---
+
 ### Game Mode 2:
 
 In this mode, two people will be playing. One player will be the Copbot while the other player will connect to the Robber over a linked network. The rules of the game are the same. However, the area is larger and more complex.
 
-## Contributions
+---
 
-*In this subsection, I want to know what is new/unique/interesting about your project.*
+## Contributions
 
 This project encorporates gamification into the ROS world. Our team is able to demonstrate an understanding of components of ROS such as networking, visualization, manual and autonomous control, finitie state machines, and logic all while creating a fun, interactive program.
 
@@ -56,20 +45,10 @@ This project encorporates gamification into the ROS world. Our team is able to d
 
 ## Installation Instructions
 
-*In this section you should provide instructions for someone else to install all of the code necessary to execute your project.
-Your target audience should be a student from the Fall 2020 class.
-You may assume that the student has ROS Indigo installed on Ubuntu 14.04.*
-
 List of Prerequisite Software:
-- Gazebo 
-- Ubuntu 14.04
-- ROS Indigo
-*This is just a list, not installation instructions.  The idea is to provide a summary of the additional software/packages that need to be installed.  Instructions go below.*
+- Gazebo
 
-
-*Now, provide detailed step-by-step instructions to install all necessary software for your project.*
-
-*The expectation is that the user should only have to follow these steps one time.  For example, if your project requires generating Gazebo mazes, the task of INSTALLING the maze generation code should go in this section.*
+"This project does not require you to generate any mazes but if you wish to develope your own area, you may do so by ...
 
 1. Create the Package:
     ```
@@ -113,11 +92,9 @@ List of Prerequisite Software:
     catkin_make
     ```
 
+---
+
 ## Running the Code
-
-*Provide detailed step-by-step instructions to run your code.*
-
-*NOTE 1:  At this point, the user should have already installed the necessary code.  This section should simply describe the steps for RUNNING your project.*  
 
 *NOTE 2:  If you're generating mazes, for example, the task of GENERATING a new maze would go here.*
 
@@ -161,16 +138,16 @@ We'll need four (4) terminal tabs across two (2) terminal window
     
 7. Navigate to your Robber control window and try and steal the gold. Good Luck!
 
+---
+
 ### Game Mode 2
 
 We'll need ## (#) terminal windows
 
+---
 
 ## Measures of Success
 
-*You have already defined these measures of success (MoS) in your proposal, and updated them after your progress report.  The purpose of this section is to highlight how well you did.  Also, these MoS will be useful in assigning partial credit.*
-
-*The MoS summary should be in table form.  A sample is provided below:*
 <TABLE>
 <TR>
 	<TH>Measure of Success (from your PROPOSAL)</TH>
@@ -263,18 +240,9 @@ We'll need ## (#) terminal windows
 </TR>
 </TABLE>
 
-*NOTE 1:  I have your proposals...don't move the goal posts!*
-
-*NOTE 2:  For activities less than 100% complete, you should differentiate between what you completed and what you were unable to complete. I suggest you add details in a bullet list below.* 
-
-
 ---
 
 ## What did you learn from this project?
-
-*For example, what concepts from class do you now have a solid understanding of?  What new techniques did you learn?*
-
-*Also, what challenges did you face, and how did you overcome these?  Be specific.*
 
 We now have a solid understanding of editing urdf files for models, subscribing/publishing to topics, setting up networks, and writing logic for turtlebots. We learned techniques such as creating state machines, spinning code, and using callbacks.
 
@@ -293,10 +261,6 @@ If a student wanted to imrove upon this project, some suggestions are as follows
 ---
 
 ## References/Resources
-
-*What resources did you use to help finish this project?*
-- Include links to Websites.  Explain what this Website enabled you to accomplish.
-- Include references to particular chapters/pages from the ROS book.  Why was each chapter necessary/helpful?
 
 From The tetbook:
 - Chapter 6
@@ -338,3 +302,4 @@ From Youtube:
 - https://www.youtube.com/watch?v=RFNNsDI2b6c
 	- walked through how to read and use LaserScan data
 
+---
