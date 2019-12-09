@@ -158,6 +158,7 @@ We'll need four (4) terminal tabs across two (2) terminal window
 6. In the same terminal, open up a new tab and launch the Copbot. 
 
 *Note: The Copbot waits for no one and will begin patrolling as soon as the script is launch. Be ready to navigate back to your Robber control window as soon as you launch the Copbot.*
+
     ```
     rosrun brandon_and_ben Mode_1_Copbot.py
     ```
