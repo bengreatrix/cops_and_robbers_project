@@ -89,7 +89,7 @@ List of Prerequisite Software:
 3. Get the source code from the course github site:
     ```
     cd ~/Downloads
-    rm -rf fall2019/brandon_and_ben
+    rm -rf fall2019/course-project-brandon_and_ben
     git clone https://github.com/IE-482-582/course-project-brandon_and_ben.git
     ```
 4. Copy the Python scripts and robots to our project workspace
