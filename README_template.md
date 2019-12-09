@@ -134,7 +134,7 @@ We'll need four (4) terminal tabs across two (2) terminal window
     
 2. As you will notice later, the camera feed from the Robber is quite glitchy. It is nice to have the third person view from gazebo for reference. Go full screen on gazebo and position the area so that it is in the lower right corner of your screen, as shown below.
 
-*insert image*
+file:///home/student/catkin_ws/Images/Mode_1_Area_Setup_1.JPG
 
 3. In the same terminal, open up a new tab and launch the Robber controls.
     ```
@@ -153,7 +153,7 @@ We'll need four (4) terminal tabs across two (2) terminal window
     
 5. Take a moment to position your terminals appropriately. One good arangement is shown below
 
-*insert image*
+file:///home/student/catkin_ws/Images/Mode_1_Area_Setup_2.JPG
 
 6. In the same terminal as your Robber Controls, open up a new tab and launch the Copbot. The Copbot waits for no one and will begin patrolling as soon as the script is launch. Be ready to navigate back to your Robber control window as soon as you launch the Copbot.
     ```
