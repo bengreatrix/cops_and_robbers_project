@@ -153,7 +153,7 @@ We'll need four (4) terminal tabs across two (2) terminal window
     
 5. Take a moment to position your terminals appropriately. One good arangement is shown below
 
-file:///home/student/catkin_ws/Images/Mode_1_Area_Setup_2.JPG
+![Mode_1_Area_Setup_2](Images/Mode_1_Area_Setup_2.JPG)
 
 6. In the same terminal as your Robber Controls, open up a new tab and launch the Copbot. The Copbot waits for no one and will begin patrolling as soon as the script is launch. Be ready to navigate back to your Robber control window as soon as you launch the Copbot.
     ```
