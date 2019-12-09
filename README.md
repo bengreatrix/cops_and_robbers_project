@@ -55,7 +55,7 @@ List of Prerequisite Software:
     cd ~/catkin_ws/src
     catkin_create_pkg brandon_and_ben rospy geometry_msgs sensor_msgs nav_msgs
     ```
-2. Create our `scripts`, and `robots` directories:
+2. Create our `scripts`, `robots`, and `msg` directories:
     ```
     cd ~/catkin_ws/src/brandon_and_ben
     mkdir scripts robots msg
