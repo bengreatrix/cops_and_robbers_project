@@ -58,7 +58,7 @@ List of Prerequisite Software:
 2. Create our `scripts`, and `robots` directories:
     ```
     cd ~/catkin_ws/src/brandon_and_ben
-    mkdir scripts robots
+    mkdir scripts robots msg
     cd ~/catkin_ws/src/brandon_and_ben/robots
     mkdir meshes urdf
     cd ~/catkin_ws/src/brandon_and_ben/robots/meshes
@@ -74,6 +74,8 @@ List of Prerequisite Software:
     ```
     cd course-project-brandon_and_ben/code/brandon_and_ben
     cp scripts/* ~/catkin_ws/src/brandon_and_ben/scripts
+    cp msg/* ~/catkin_ws/brandon_and_ben/msg
+    cp srv/* ~/catkin_ws/brandon_and_ben/srv
     cp robots/*.urdf.xacro ~/catkin_ws/src/brandon_and_ben/robots
     cp robots/urdf/*.urdf.xacro ~/catkin_ws/src/brandon_and_ben/robots/urdf
     cp robots/meshes/*.dae ~/catkin_ws/src/brandon_and_ben/robots/meshes
