@@ -104,7 +104,7 @@ List of Prerequisite Software:
     
 5. Make everything executable
     ```
-    cd ~catkin_ws/src/brandon_and_ben
+    cd ~catkin_ws/src/brandon_and_ben/scripts
     chmod +x *
     ```
     
@@ -138,6 +138,7 @@ We'll need four (4) terminal tabs across two (2) terminal window
 
 3. In the same terminal, open up a new tab and launch the Robber controls.
     ```
+    cd ~catkin_ws/src/brandon_and_ben/scripts
     rosrun brandon_and_ben Robber_Controls.py
     ```
     
