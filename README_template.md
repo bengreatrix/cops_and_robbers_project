@@ -134,7 +134,7 @@ We'll need four (4) terminal tabs across two (2) terminal window
     
 2. As you will notice later, the camera feed from the Robber is quite glitchy. It is nice to have the third person view from gazebo for reference. Go full screen on gazebo and position the area so that it is in the lower right corner of your screen, as shown below.
 
-file:///home/student/catkin_ws/Images/Mode_1_Area_Setup_1.JPG
+![Mode_1_Are_1_Setup](Images/Mode_1_Area_Setup_1.JPG)
 
 3. In the same terminal, open up a new tab and launch the Robber controls.
     ```
