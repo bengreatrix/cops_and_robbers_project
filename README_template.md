@@ -327,6 +327,9 @@ From Github:
 From ROS wiki:
 - https://answers.ros.org/question/261782/how-to-use-getmodelstate-service-from-gazebo-in-python/
 	- helped with figuring out how to get coordinates of Turtlebots in gazebo world
+	
+- http://wiki.ros.org/navigation/Tutorials/RobotSetup/Sensors
+	- helped with understanding how to use information from LaserScan
 
 From Youtube:
 - https://www.youtube.com/watch?v=WqK2IY5_9OQ&feature=youtu.be
