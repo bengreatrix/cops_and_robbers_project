@@ -40,7 +40,7 @@ You must then drive into one of the two exits shown below.
 
 *insert image*
 
-Be careful not to be caught by the Copbot. If the Copbot gets too close to you (roughly a half meter) you will see the message below in your Robber.py terminal and you will lose the game.
+Be careful not to be caught by the Copbot. If the Copbot gets too close to you (roughly a half meter) you will see the message below in your Robber.py terminal, signifying that you have lost the game.
 
 
 ### Game Mode 2:
@@ -113,7 +113,6 @@ List of Prerequisite Software:
     cd ~/catkin_ws
     catkin_make
     ```
---
 
 ## Running the Code
 
@@ -125,44 +124,49 @@ List of Prerequisite Software:
 
 ### Game Mode 1
 
-We'll need ## (#) terminal windows
+We'll need four (4) terminal tabs across two (2) terminal window 
 
-1. Launch the course
+1. Open up a terminal and launch the course.
     ```
     cd ~catkin_ws/src/brandon_and_ben/scripts
-    roslaunch brandon_and_ben $$$$$$$
+    roslaunch brandon_and_ben Mode_1_Area.launch
     ```
     
-2. In a new terminal, launch the controls for the Robber
-    ```
-    cd ~/catkin_ws/src/brandon_and_ben/scripts
-    roslaunch brandon_and_ben keyboard_teleop.launch
-    ```
-    
-3. In a new terminal, launch the robber.py script
-    ```
-    cd ~/catkin_ws/src/brandon_and_ben/scripts
-    rosrun brandon_and_ben robber.py
-    ```
-    
-For a more realistic experience, it is reccomended that you go full screen on the ### window and play the game from the first person perspective of the robber. Do keep the robber.py terminal in view though so you know when you have got the gold.
-    
-4. In a new terminal, launch the copbot.py script
+2. As you will notice later, the camera feed from the Robber is quite glitchy. It is nice to have the third person view from gazebo for reference. Go full screen on gazebo and position the area so that it is in the lower right corner of your screen, as shown below.
 
-    ```
-    cd ~catkin_ws/src/brandon_and_ben/scripts
-    rosrun brandon_and_ben copbot.py
-    ```
+*insert image*
 
-Navigate back to the controls terminal so that your keystrokes are recorded. You can stay inside the terminal while it is minimized to allow for a better view of the ### window and robber.py terminal.
+3. In the same terminal, open up a new tab and launch the Robber controls.
+    ```
+    rosrun brandon_and_ben Robber_Controls.py
+    ```
+    
+*Note: that the Copbot has been given a maximum linear speed of 1 m/s and maximum angular rotation of .3 rads/s. Adjust the speed of your Robber accordingly if you want to give the Copbot a fair shot... or don't... doesn't matter either way.*
 
-5. Play the game and have fun!
+    
+4. In a new terminal, launch the Robber script.
+    ```
+    rosrun brandon_and_ben Mode_1_Robber.py
+    ```
+    
+    You will see that a window appears, this is the camera feed from the Robber. If you feel confident, you can minimize gazebo and try to get away with the gold using only the view from the camera.
+    
+5. Take a moment to position your terminals appropriately. One good arangement is shown below
+
+*insert image*
+
+6. In the same terminal, open up a new tab and launch the Copbot. 
+
+*Note: The Copbot waits for no one and will begin patrolling as soon as the script is launch. Be ready to navigate back to your Robber control window as soon as you launch the Copbot.*
+    ```
+    rosrun brandon_and_ben Mode_1_Copbot.py
+    ```
+    
+7. Navigate to your Robber control window and try and steal the gold. Good Luck!
 
 ### Game Mode 2
 
 We'll need ## (#) terminal windows
-
-
 
 
 ## Measures of Success
