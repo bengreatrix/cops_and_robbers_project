@@ -39,7 +39,7 @@ In this mode, two people will be playing. One player will be the Copbot while th
 
 ## Contributions
 
-This project encorporates gamification into the ROS world. Our team is able to demonstrate an understanding of components of ROS such as networking, visualization, manual and autonomous control, finitie state machines, and logic all while creating a fun, interactive program.
+This project encorporates gamification into the ROS world. Our team is able to demonstrate an understanding of components of ROS such as networking, visualization, manual and autonomous control, finite state machines, and logic all while creating a fun, interactive program.
 
 ---
 
