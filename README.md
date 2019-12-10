@@ -27,7 +27,7 @@ You must then drive into one of the two green exits.
 
 Be careful not to be caught by the Copbot. If the Copbot gets too close to you (roughly a half meter) you will see the message below in your Robber.py terminal, signifying that you have lost the game.
 
-![youve_been_caught2](Images/youve been caught2.JPG)
+![youve_been_caught2](Images/youve_been_caught2.JPG)
 
 ---
 
