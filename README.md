@@ -48,7 +48,7 @@ This project encorporates gamification into the ROS world. Our team is able to d
 List of Prerequisite Software:
 - Gazebo
 
-"This project does not require you to generate any mazes but if you wish to develope your own area, you may do so by ...
+This project does not require you to generate any mazes but if you wish to develope your own area, you may do so by referencing the maze_generator repo link below. This would also require you to change the world directory in the `*_Area.launch` files and also change the coordinates of the gold and exits in the `*Copbot.py` and `*Robber.py` scripts.
 
 1. Create the Package:
     ```
@@ -98,8 +98,6 @@ List of Prerequisite Software:
 
 ## Running the Code
 
-*NOTE 2:  If you're generating mazes, for example, the task of GENERATING a new maze would go here.*
-
 ### Game Mode 1
 
 We'll need four (4) terminal tabs across two (2) terminal window 
@@ -144,7 +142,7 @@ We'll need four (4) terminal tabs across two (2) terminal window
 
 ### Game Mode 2
 
-We'll need ## (#) terminal windows
+We'll need two (2) terminal windows
 
 ---
 
@@ -192,7 +190,7 @@ We'll need ## (#) terminal windows
 </TR>
 <TR>
 	<TD>Network Turtlebots</TD>
-	<TD>50% Some things aren't in place yet</TD>
+	<TD>%50% Some things aren't in place yet</TD>
 	
 </TR>
 <TR>
@@ -232,12 +230,12 @@ We'll need ## (#) terminal windows
 </TR>
 <TR>
 	<TD>Complete final report</TD>
-	<TD>75% Some more things have to be completed</TD>
+	<TD>90% Some more things have to be completed</TD>
 	
 </TR>
 <TR>
 	<TD>Submit final presentation</TD>
-	<TD>0% Not due for another week</TD>
+	<TD>90% Not due for another week</TD>
 
 </TR>
 </TABLE>
