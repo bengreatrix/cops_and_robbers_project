@@ -21,13 +21,13 @@ In this mode, only one person will be playing. You will be contolling a Turtlebo
 
 Once you are close enough, a message will appear in the Robber.py terminal alerting you that you have the gold.
 
-![Youve_got_The_gold](Images/Youve_got_the_gold.JPG)
+![Youve_got_The_gold2](Images/Youve_got_the_gold2.JPG)
 
 You must then drive into one of the two green exits.
 
 Be careful not to be caught by the Copbot. If the Copbot gets too close to you (roughly a half meter) you will see the message below in your Robber.py terminal, signifying that you have lost the game.
 
-![youve_been_caught](Images/youve_been_caught.JPG)
+![youve_been_caught2](Images/youve_been_caught2.JPG)
 
 ---
 
