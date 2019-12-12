@@ -33,6 +33,9 @@ Be careful not to be caught by the Copbot. If the Copbot gets too close to you (
 
 ### Game Mode 2:
 
+![Mode_2_Arena](Images/Mode_2_Arena.png)
+
+
 In this mode, two people will be playing. One player will be the Copbot while the other player will connect to the Robber over a linked network. The rules of the game are the same. However, the area is larger and more complex.
 
 ---
@@ -148,6 +151,58 @@ We'll need four (4) terminal tabs across two (2) terminal window
 
 We'll need two (2) terminal windows
 
+## Networked Version 
+These instructions assume that 
+- There is a computer named `darkstar` that will be the "master".  Replace `darkstar` everywhere below if another computer is used as the master.
+- The race is `murray`.  Replace `murray` with the appropriate username to run a different race.
+		
+	 
+### On the Master computer (server):
+1. **Terminal 1** -- Set master and launch gazebo:
+	```
+	export ROS_MASTER_URI=http://(YOUR_IP_ADDRESS):11311
+	cd ~/catkin_ws/src/brandon_and_ben/scripts
+	roslaunch brandon_and_ben Mode_2_Area.launch
+	```
+	
+	- Replace `(YOUR_IP_ADDRESS)` with the IP-Address of the computer that will run the tower to enable a linked network. 
+	- Replace `murray` with a different UBusername to run a different race.
+	
+3. **Terminal 2** -- Set master and run tower:
+	```
+	export ROS_MASTER_URI=http://(YOUR_IP_ADDRESS):11311
+	cd ~/catkin_ws/src/brandon_and_ben/scripts
+	rosrun brandon_and_ben tower.py brandon_and_ben
+	```
+
+	- NOTE 1: This script requires one input argument, which is the name of the race.  The input name is used to identify the type of world being used. The purpose of the tower.py script is to keep track and record of which client computers are logged on and registered as the robber. 
+	
+	- NOTE 2: The robots won't be able to move until you "release the game" by hitting `Enter` in this terminal window.
+
+
+### On the Client Computer:
+1. **Terminal 1** -- Set master and run Mode_2_Robber simualtion:
+	```
+	export ROS_MASTER_URI=http://(YOUR_IP_ADDRESS):11311
+	cd ~/catkin_ws/src/brandon_and_ben/scripts
+	rosrun brandon_and_ben Mode_2_Robber.py
+	```
+
+	NOTE: Each student will create their own controller script.  Replace `testing` with your UBusername to run your control algorithm.  This doesn't have to match the name of the race (you will be using your controller to race on tracks created by other users).
+
+2. **Terminal 2** -- Run the manual keyboard controller:
+	```
+	export ROS_MASTER_URI=http://(YOUR_IP_ADDRESS):11311
+	cd ~/catkin_ws/src/brandon_and_ben/scripts
+	rosrun brandon_and_ben Robber_Controls.py
+	```
+	
+	- For example, if you were assigned RobotID 3, that last command would be `rosrun turtlebotrace key_publisher.py 3`.
+
+3. Tell the person running the Tower to "release the game" by hitting `Enter` in their Terminal 2.
+
+
+
 ---
 
 ## Measures of Success
@@ -194,7 +249,7 @@ We'll need two (2) terminal windows
 </TR>
 <TR>
 	<TD>Network Turtlebots</TD>
-	<TD>%50% Some things aren't in place yet</TD>
+	<TD>%110% Managed to relay the camera feed from the Mode_2_Robber.py script over the linked network while you manage the Teleop controls with Robber_Controls.py </TD>
 	
 </TR>
 <TR>
