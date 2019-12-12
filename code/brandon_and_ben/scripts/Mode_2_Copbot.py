@@ -10,7 +10,7 @@ class Finder:
 		cv2.namedWindow("window", 1)
 		self.image_sub = rospy.Subscriber('/robot1/camera/rgb/image_raw', Image, self.image_callback)
 		self.state = 1
-		print ('\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n Catch the criminal!')
+		print ('\n \n \n \n \n \n Catch the criminal!')
 		
 	def image_callback(self, msg):
 		model_coordinates = rospy.ServiceProxy('/gazebo/get_model_state', GetModelState)
