@@ -35,7 +35,6 @@ Be careful not to be caught by the Copbot. If the Copbot gets too close to you (
 
 ![Mode_2_Arena](Images/Mode_2_Arena.png)
 
-
 In this mode, two people will be playing. One player will be the Copbot while the other player will connect to the Robber over a linked network. The rules of the game are the same. However, the area is larger and more complex.
 
 ---
