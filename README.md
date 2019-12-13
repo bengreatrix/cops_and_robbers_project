@@ -35,7 +35,7 @@ Be careful not to be caught by the Copbot. If the Copbot gets too close to you (
 
 ![Mode_2_Arena](Images/Mode_2_Arena.png)
 
-In this mode, two people will be playing. One player will be the Copbot while the other player will connect to the Robber over a linked network. The rules of the game are the same. However, the area is larger and more complex.
+In this mode, you will have the opportunity to play two players through a connected network or not. One player will be the Copbot, on the master computer, while the other player will connect to the Robber, on the client computer, over a linked network. Alternatively, if you dont have an extra laptop you are capable of playing this game mode with both players by just using the master computer and by following the explicit instructions below. The rules of the game are the same as Mode 1. However, the area is larger and more complex.
 
 ---
 
@@ -59,7 +59,7 @@ This would also require you to change the world directory in the `*_Area.launch`
 1. Create the Package:
     ```
     cd ~/catkin_ws/src
-    catkin_create_pkg brandon_and_ben rospy geometry_msgs sensor_msgs nav_msgs
+    catkin_create_pkg brandon_and_ben rospy geometry_msgs sensor_msgs nav_msgs std_msgs
     ```
 2. Create our `scripts`, `robots`, `msg`, and `srv` directories:
     ```
@@ -151,9 +151,15 @@ We'll need four (4) terminal tabs across two (2) terminal window
 We'll need two (2) terminal windows
 
 ## Networked Version 
-These instructions assume that 
-- There is a computer named `darkstar` that will be the "master".  Replace `darkstar` everywhere below if another computer is used as the master.
-- The race is `murray`.  Replace `murray` with the appropriate username to run a different race.
+These instructions are intended to link one or multiple computers across a linked IP Address that will belong to a master computer/server.
+
+![ifconfig_native](Images/ifconfig_native.png)
+
+
+
+![ifconfig_VM](Images/ifconfig_VM.png)
+
+
 		
 	 
 ### On the Master computer (server):
@@ -187,16 +193,16 @@ These instructions assume that
 	rosrun brandon_and_ben Mode_2_Robber.py
 	```
 
-	NOTE: Each student will create their own controller script.  Replace `testing` with your UBusername to run your control algorithm.  This doesn't have to match the name of the race (you will be using your controller to race on tracks created by other users).
+	- NOTE: 
 
 2. **Terminal 2** -- Run the manual keyboard controller:
 	```
 	export ROS_MASTER_URI=http://(YOUR_IP_ADDRESS):11311
 	cd ~/catkin_ws/src/brandon_and_ben/scripts
-	rosrun brandon_and_ben Robber_Controls.py
+	rosrun brandon_and_ben Robber_Controls_Link.py
 	```
 	
-	- For example, if you were assigned RobotID 3, that last command would be `rosrun turtlebotrace key_publisher.py 3`.
+	- Note:
 
 3. Tell the person running the Tower to "release the game" by hitting `Enter` in their Terminal 2.
 
@@ -248,7 +254,7 @@ These instructions assume that
 </TR>
 <TR>
 	<TD>Network Turtlebots</TD>
-	<TD>%110% Managed to relay the camera feed from the Mode_2_Robber.py script over the linked network while you manage the Teleop controls with Robber_Controls.py </TD>
+	<TD>%100%   Able to taap into Robber camera feed</TD>
 	
 </TR>
 <TR>
@@ -288,7 +294,7 @@ These instructions assume that
 </TR>
 <TR>
 	<TD>Complete final report</TD>
-	<TD>90% Some more things have to be completed</TD>
+	<TD>100% </TD>
 	
 </TR>
 <TR>
