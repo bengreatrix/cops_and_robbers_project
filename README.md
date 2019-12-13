@@ -298,7 +298,7 @@ These instructions are intended to link one or multiple computers across a linke
 </TR>
 <TR>
 	<TD>Submit final presentation</TD>
-	<TD>90% Not due for another week</TD>
+	<TD>100%</TD>
 
 </TR>
 </TABLE>
