@@ -148,7 +148,39 @@ We'll need four (4) terminal tabs across two (2) terminal windows
 
 ### Game Mode 2
 
-We'll need two (2-3) terminal windows
+We'll need two (2-3) terminal windows for the Master computer and only 2 terminal windows for the client computer
+
+For testing purposes, it is recommended that you start with the "standalone" version.  This will require you to run gazebo on your machine.  
+
+## Standalone Version (not networked)
+1. **Terminal 1** -- Open Gazebo and ready your world for a game of Cops and Robbers:
+	```
+	cd ~/catkin_ws/src/brandon_and_ben/scripts
+	roslaunch brandon_and_ben Mode_2_Area.launch
+	```
+	
+	- NOTE: When the ` Mode_2_Area.launch ` script is launched, a seperate terminal window will appear that will allow you to manually control the Copbot before you initialize any simulations
+	
+	- NOTE: If you somehow close the teleop controls for the Copbot, you may enter this command to regain control. However!! Make sure you dont have the Mode_2_Copbot.py script running.
+	```
+	rosrun brandon_and_ben Robber_Controls.py robot1/cmd_vel_mux/input/teleop:= robot2/cmd_vel_mux/input/teleop
+	```
+	
+2. **Terminal 2** -- Start the CopBot simulation: 
+	```
+	cd ~/catkin_ws/src/brandon_and_ben/scripts
+	rosrun brandon_and_ben Mode_2_Copbot.py
+	```	
+
+3. **Terminal 3** -- Launch your Robber Controller node:
+	```
+	cd ~/catkin_ws/src/turtlebotrace/scripts
+	rosrun brandon_and_ben Robber_Controls.py	
+	```
+
+	- Note: You have complete freedom to fluctuate the linear and angular velocity of the bot but beware, because if you move to fast or crash into a wall one could easily end up tipping over or spinning out of control. 
+	
+---
 
 ## Networked Version 
 ### On the Master computer (server):
@@ -169,8 +201,9 @@ Shown below, is what you should see if you have a virtual machine of Ubuntu 14.0
 
 ![ifconfig_VM](Images/ifconfig_VM.png)
 
-	- Note: Keep this terminal to the side with your IP Address because in order to establish a solid connection between the master and client computers we must link each computer to the MASTER IP Address
-	- Note: Only the master computer needs to acquire its IP Address, therefore each client needs to record this IP address in order to connect to the correct master computer. 
+- NOTE 1: Keep this terminal to the side with your IP Address because in order to establish a solid connection between the master and client computers we must link each computer to the MASTER IP Address
+	
+- Note 2: Only the master computer needs to acquire its IP Address, therefore each client needs to record this IP address in order to connect to the correct master computer. 
 	 
 ### On the Master computer (server):
 2. **Terminal 2** -- Set master and launch gazebo:
@@ -181,8 +214,21 @@ Shown below, is what you should see if you have a virtual machine of Ubuntu 14.0
 	```
 	
 	- Replace `(YOUR_IP_ADDRESS)` with the IP-Address of the computer that will run the tower to enable a linked network. 
+	- NOTE: When the ` Mode_2_Area.launch ` script is launched, a seperate terminal window will appear that will allow you to manually control the Copbot before you initialize any simulations
 	
-3. **Terminal 3** -- Set master and run tower:
+	- NOTE: If you somehow close the teleop controls for the Copbot, you may enter this command to regain control. However!! Make sure you dont have the Mode_2_Copbot.py script running.
+	```
+	rosrun brandon_and_ben Robber_Controls.py robot1/cmd_vel_mux/input/teleop:= robot2/cmd_vel_mux/input/teleop
+	```
+
+3. **Terminal 3** -- Start the CopBot simulation: 
+	```
+	cd ~/catkin_ws/src/brandon_and_ben/scripts
+	rosrun brandon_and_ben Mode_2_Copbot.py
+	
+	- NOTE: The Copbot simulation doesnt need to exported across the linked IP Address because the script is running off the master computer and doesnt need to be connected by any client computers.
+	
+4. **Terminal 4** -- Set master and run tower:
 	```
 	export ROS_MASTER_URI=http://(YOUR_IP_ADDRESS):11311
 	cd ~/catkin_ws/src/brandon_and_ben/scripts
@@ -197,21 +243,22 @@ Shown below, is what you should see if you have a virtual machine of Ubuntu 14.0
 ### On the Client Computer:
 1. **Terminal 1** -- Set master and run Mode_2_Robber simualtion:
 	```
-	export ROS_MASTER_URI=http://(YOUR_IP_ADDRESS):11311
+	export ROS_MASTER_URI=http://(MASTER_IP_ADDRESS):11311
 	cd ~/catkin_ws/src/brandon_and_ben/scripts
 	rosrun brandon_and_ben Mode_2_Robber.py
 	```
 
-	- NOTE: 
+	- NOTE: The Master IP Address should be the IP Address of the computer you wish to connect to. 
+	- NOTE: You shouldnt need to screen-peak at the master computer since the Mode_2_Robber.py script is able to send a raw camera feed across the linked network. It makes the game more fun!
 
 2. **Terminal 2** -- Run the manual keyboard controller:
 	```
-	export ROS_MASTER_URI=http://(YOUR_IP_ADDRESS):11311
+	export ROS_MASTER_URI=http://(MASTER_IP_ADDRESS):11311
 	cd ~/catkin_ws/src/brandon_and_ben/scripts
 	rosrun brandon_and_ben Robber_Controls_Link.py
 	```
 	
-	- Note:
+	- Note: You have complete freedom to fluctuate the linear and angular velocity of the bot but beware, because if you move to fast or crash into a wall one could easily end up tipping over or spinning out of control. 
 
 3. Tell the person running the Tower to "release the game" by hitting `Enter` in their Terminal 2.
 
