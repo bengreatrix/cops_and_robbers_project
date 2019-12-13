@@ -373,12 +373,12 @@ We now have a solid understanding of editing urdf files for models, subscribing/
 
 ## Future Work
 
-*If a student from next year's class wants to build upon your project, what would you suggest they do?  What suggestions do you have to help get them started (e.g., are there particular Websites they should check out?).*
+*If a student from next year's class that wants to build upon your project, what would you suggest they do?  What suggestions do you have to help get them started (e.g., are there particular Websites they should check out?).*
 
 If a student wanted to imrove upon this project, some suggestions are as follows:
-- Improve the speed at which the program runs
-- improve upon the copbot.py script that the Copbot uses so that it is better at pursuing the Robber
-- Make the program more user friendly (i.e. encorporate everything into one launch file)
+- Turn the simulation into a video game with multiple level
+- Improve the complexity of the autonomous controls and values to be more modular by using ROS parameters (ROS param)
+- Make the program more user friendly and simplistic to understand (i.e. encorporate everything into one launch file)
 - Build a map for the copbot so it can autonomsly pursue the robber in the complex area
 
 ---
@@ -424,5 +424,6 @@ From Youtube:
 
 - https://www.youtube.com/watch?v=RFNNsDI2b6c
 	- walked through how to read and use LaserScan data
+
 
 ---
