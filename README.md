@@ -253,7 +253,7 @@ These instructions are intended to link one or multiple computers across a linke
 </TR>
 <TR>
 	<TD>Network Turtlebots</TD>
-	<TD>%100% Able to tap into Robber camera feed</TD>
+	<TD>100% Able to tap into Robber camera feed</TD>
 	
 </TR>
 <TR>
