@@ -106,7 +106,7 @@ This would also require you to change the world directory in the `*_Area.launch`
 
 ### Game Mode 1
 
-We'll need four (4) terminal tabs across two (2) terminal window 
+We'll need four (4) terminal tabs across two (2) terminal windows
 
 1. Open up a terminal and launch the course.
     ```
@@ -171,7 +171,6 @@ These instructions are intended to link one or multiple computers across a linke
 	```
 	
 	- Replace `(YOUR_IP_ADDRESS)` with the IP-Address of the computer that will run the tower to enable a linked network. 
-	- Replace `murray` with a different UBusername to run a different race.
 	
 3. **Terminal 2** -- Set master and run tower:
 	```
@@ -254,7 +253,7 @@ These instructions are intended to link one or multiple computers across a linke
 </TR>
 <TR>
 	<TD>Network Turtlebots</TD>
-	<TD>%100%   Able to taap into Robber camera feed</TD>
+	<TD>%100%   Able to tap into Robber camera feed</TD>
 	
 </TR>
 <TR>
