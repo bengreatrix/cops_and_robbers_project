@@ -7,6 +7,9 @@ Team Members:
 - Ben Greatrix, bengreat@buffalo.edu
 - Brandon Andreu, bandreu@buffalo.edu
 
+YouTube Video Link:
+[Link go here]
+
 ---
 
 ## Project Description
@@ -159,9 +162,9 @@ For testing purposes, it is recommended that you start with the "standalone" ver
 	roslaunch brandon_and_ben Mode_2_Area.launch
 	```
 	
-	- NOTE: When the ` Mode_2_Area.launch ` script is launched, a seperate terminal window will appear that will allow you to manually control the Copbot before you initialize any simulations
+	- NOTE 1: When the ` Mode_2_Area.launch ` script is launched, a seperate terminal window will appear that will allow you to manually control the Copbot before you initialize any simulations
 	
-	- NOTE: If you somehow close the teleop controls for the Copbot, you may enter this command to regain control. However!! Make sure you dont have the Mode_2_Copbot.py script running.
+	- NOTE 2: If you somehow close the teleop controls for the Copbot, you may enter this command to regain control. However!! Make sure you dont have the Mode_2_Copbot.py script running.
 	```
 	rosrun brandon_and_ben Robber_Controls.py robot1/cmd_vel_mux/input/teleop:= robot2/cmd_vel_mux/input/teleop
 	```
@@ -178,7 +181,7 @@ For testing purposes, it is recommended that you start with the "standalone" ver
 	rosrun brandon_and_ben Robber_Controls.py	
 	```
 
-	- Note: You have complete freedom to fluctuate the linear and angular velocity of the bot but beware, because if you move to fast or crash into a wall one could easily end up tipping over or spinning out of control. 
+	- Note 1: You have complete freedom to fluctuate the linear and angular velocity of the bot but beware, because if you move to fast or crash into a wall one could easily end up tipping over or spinning out of control. 
 	
 ---
 
@@ -203,9 +206,9 @@ Shown below, is what you should see if you have a virtual machine of Ubuntu 14.0
 
 - NOTE 1: Keep this terminal to the side with your IP Address because in order to establish a solid connection between the master and client computers we must link each computer to the MASTER IP Address
 	
-- Note 2: Only the master computer needs to acquire its IP Address, therefore each client needs to record this IP address in order to connect to the correct master computer. 
+- NOTE 2: Only the master computer needs to acquire its IP Address, therefore each client needs to record this IP address in order to connect to the correct master computer. 
 	 
-### On the Master computer (server):
+
 2. **Terminal 2** -- Set master and launch gazebo:
 	```
 	export ROS_MASTER_URI=http://(YOUR_IP_ADDRESS):11311
@@ -214,9 +217,9 @@ Shown below, is what you should see if you have a virtual machine of Ubuntu 14.0
 	```
 	
 	- Replace `(YOUR_IP_ADDRESS)` with the IP-Address of the computer that will run the tower to enable a linked network. 
-	- NOTE: When the ` Mode_2_Area.launch ` script is launched, a seperate terminal window will appear that will allow you to manually control the Copbot before you initialize any simulations
+	- NOTE 1: When the ` Mode_2_Area.launch ` script is launched, a seperate terminal window will appear that will allow you to manually control the Copbot before you initialize any simulations
 	
-	- NOTE: If you somehow close the teleop controls for the Copbot, you may enter this command to regain control. However!! Make sure you dont have the Mode_2_Copbot.py script running.
+	- NOTE 2: If you somehow close the teleop controls for the Copbot, you may enter this command to regain control. However!! Make sure you dont have the Mode_2_Copbot.py script running.
 	```
 	rosrun brandon_and_ben Robber_Controls.py robot1/cmd_vel_mux/input/teleop:= robot2/cmd_vel_mux/input/teleop
 	```
@@ -248,8 +251,8 @@ Shown below, is what you should see if you have a virtual machine of Ubuntu 14.0
 	rosrun brandon_and_ben Mode_2_Robber.py
 	```
 
-	- NOTE: The Master IP Address should be the IP Address of the computer you wish to connect to. 
-	- NOTE: You shouldnt need to screen-peak at the master computer since the Mode_2_Robber.py script is able to send a raw camera feed across the linked network. It makes the game more fun!
+	- NOTE 1: The Master IP Address should be the IP Address of the computer you wish to connect to. 
+	- NOTE 2: You shouldnt need to screen-peak at the master computer since the Mode_2_Robber.py script is able to send a raw camera feed across the linked network. It makes the game more fun!
 
 2. **Terminal 2** -- Run the manual keyboard controller:
 	```
@@ -258,7 +261,7 @@ Shown below, is what you should see if you have a virtual machine of Ubuntu 14.0
 	rosrun brandon_and_ben Robber_Controls_Link.py
 	```
 	
-	- Note: You have complete freedom to fluctuate the linear and angular velocity of the bot but beware, because if you move to fast or crash into a wall one could easily end up tipping over or spinning out of control. 
+	- Note 1: You have complete freedom to fluctuate the linear and angular velocity of the bot but beware, because if you move to fast or crash into a wall one could easily end up tipping over or spinning out of control. 
 
 3. Tell the person running the Tower to "release the game" by hitting `Enter` in their Terminal 2.
 
