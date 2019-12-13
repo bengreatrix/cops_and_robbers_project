@@ -228,6 +228,7 @@ Shown below, is what you should see if you have a virtual machine of Ubuntu 14.0
 	```
 	cd ~/catkin_ws/src/brandon_and_ben/scripts
 	rosrun brandon_and_ben Mode_2_Copbot.py
+	```
 	
 	- NOTE: The Copbot simulation doesnt need to exported across the linked IP Address because the script is running off the master computer and doesnt need to be connected by any client computers.
 	
