@@ -148,22 +148,32 @@ We'll need four (4) terminal tabs across two (2) terminal windows
 
 ### Game Mode 2
 
-We'll need two (2) terminal windows
+We'll need two (2-3) terminal windows
 
 ## Networked Version 
+### On the Master computer (server):
+
 These instructions are intended to link one or multiple computers across a linked IP Address that will belong to a master computer/server.
+
+1. **Terminal 1** --  Find and keep track of your IP address:
+	```
+	ifconfig
+	```
+When the 'ifconfig' command is given to the terminal, the following two pictures depict what you will witness from the perspective of a virtually machine derived from your computers installed Windows or Mac OS ,and a native installation of Ubuntu 14.04. 
+
+Shown below, is what you should see if you have a native installation of Ubuntu 14.04. The red circle depicts the correct name and IP address you should use in order to establish the correct network connectivity.
 
 ![ifconfig_native](Images/ifconfig_native.png)
 
-
+Shown below, is what you should see if you have a virtual machine of Ubuntu 14.04. The red circle depicts the correct name and IP address you should use in order to establish the correct network connectivity.
 
 ![ifconfig_VM](Images/ifconfig_VM.png)
 
-
-		
+	- Note: Keep this terminal to the side with your IP Address because in order to establish a solid connection between the master and client computers we must link each computer to the MASTER IP Address
+	- Note: Only the master computer needs to acquire its IP Address, therefore each client needs to record this IP address in order to connect to the correct master computer. 
 	 
 ### On the Master computer (server):
-1. **Terminal 1** -- Set master and launch gazebo:
+2. **Terminal 2** -- Set master and launch gazebo:
 	```
 	export ROS_MASTER_URI=http://(YOUR_IP_ADDRESS):11311
 	cd ~/catkin_ws/src/brandon_and_ben/scripts
@@ -172,7 +182,7 @@ These instructions are intended to link one or multiple computers across a linke
 	
 	- Replace `(YOUR_IP_ADDRESS)` with the IP-Address of the computer that will run the tower to enable a linked network. 
 	
-3. **Terminal 2** -- Set master and run tower:
+3. **Terminal 3** -- Set master and run tower:
 	```
 	export ROS_MASTER_URI=http://(YOUR_IP_ADDRESS):11311
 	cd ~/catkin_ws/src/brandon_and_ben/scripts
