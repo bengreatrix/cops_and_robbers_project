@@ -16,6 +16,8 @@ YouTube Video Link:
 
 This project was inspired from the children's game known as cops and robbers. There are two game modes. An introduction and description of each game mode can be acessed through the link below.
 
+https://www.youtube.com/watch?v=GMnTya5G5l4&feature=youtu.be
+
 ### Game Mode 1:
 
 ![Game_Annotation](Images/Game_Annotation.JPG)
