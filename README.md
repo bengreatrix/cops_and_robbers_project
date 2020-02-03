@@ -388,7 +388,7 @@ If a student wanted to imrove upon this project, some suggestions are as follows
 
 ## References/Resources
 
-From The tetbook:
+Based off the textbook we referenced the following chapters:
 - Chapter 6
 	- helped with understanding how to connect and use the camera on the Turtlebots
 - Chapter 7
