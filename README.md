@@ -4,19 +4,17 @@
 Project Name: brandon_and_ben 
 
 Team Members:
-- Ben Greatrix, bengreat@buffalo.edu
+- Ben Greatrix, benjamingreatrix@gmail.com
 - Brandon Andreu, bandreu@buffalo.edu
 
 YouTube Video Link:
-[Link go here]
+Available upon request (email benjamingreatrix@gmail.com)
 
 ---
 
 ## Project Description
 
-This project was inspired from the children's game known as cops and robbers. There are two game modes. An introduction and description of each game mode can be acessed through the link below.
-
-https://www.youtube.com/watch?v=GMnTya5G5l4&feature=youtu.be
+This project was inspired from the children's game known as cops and robbers. There are two game modes.
 
 ### Game Mode 1:
 
