@@ -70,7 +70,7 @@ List of Prerequisite Software:
 3. Get the source code from the course github site:
     ```
     cd ~/Downloads
-    rm -rf course-project-brandon_and_ben
+    rm -rf cops_and_robbers_project
     git clone https://github.com/bengreatrix/cops_and_robbers_project.git
     ```
 4. Copy the Python scripts and robots to our project workspace
