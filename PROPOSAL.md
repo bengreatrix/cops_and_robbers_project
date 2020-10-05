@@ -49,13 +49,13 @@ A modified version of the turtlbotrace scripts will be used to launch the gazebo
 - [x] Write final script for the Robber.  *Due Dec. 8*
 - [x] Write final script for the Copbot.  *Due Dec. 8*
 - [x] Complete final report.  *Due Dec. 16*
-- [ ] Submit final presentation  *Due Dec. 16*
+- [X] Submit final presentation  *Due Dec. 16*
 
 
 ## Measures of Success
 The project will be considered a success if we are able to check off all the items in the checklist. Partial crdit may be given in accordance to how many items we were able to check off the checklist. Some additional measures off sucess are:
 
-- [ ] View robot models in gazebo with appropriate colors.
-- [ ] Show the camera view of the Robber.
-- [ ] Demonstarte that the Copbot autonomously follows the robber in mode 1.
-- [ ] Hvae classmates follow the steps in the README to sucessfully run the simulation without any help.
+- [X] View robot models in gazebo with appropriate colors.
+- [X] Show the camera view of the Robber.
+- [X] Demonstarte that the Copbot autonomously follows the robber in mode 1.
+- [X] Hvae classmates follow the steps in the README to sucessfully run the simulation without any help.
