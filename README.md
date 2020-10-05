@@ -75,7 +75,7 @@ List of Prerequisite Software:
     ```
 4. Copy the Python scripts and robots to our project workspace
     ```
-    cd course-project-brandon_and_ben/code/brandon_and_ben
+    cd cops_and_robbers_project/code/brandon_and_ben
     cp scripts/* ~/catkin_ws/src/brandon_and_ben/scripts
     cp msg/* ~/catkin_ws/brandon_and_ben/msg
     cp srv/* ~/catkin_ws/brandon_and_ben/srv
