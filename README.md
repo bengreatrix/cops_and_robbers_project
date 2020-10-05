@@ -71,7 +71,7 @@ List of Prerequisite Software:
     ```
     cd ~/Downloads
     rm -rf course-project-brandon_and_ben
-    git clone https://github.com/bengreatrix/cops_and_robbers.git
+    git clone https://github.com/bengreatrix/cops_and_robbers_project.git
     ```
 4. Copy the Python scripts and robots to our project workspace
     ```
