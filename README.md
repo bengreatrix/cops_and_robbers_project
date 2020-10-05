@@ -53,12 +53,6 @@ This project encorporates gamification into the ROS world. Our team is able to d
 List of Prerequisite Software:
 - Gazebo
 
-This project does not require you to generate any mazes but if you wish to develope your own area, you may do so by referencing the world_demo repo contained in the link below. 
-
-https://github.com/IE-482-582/fall2018.git
-
-This would also require you to change the world directory in the `*_Area.launch` files and also change the coordinates of the gold and exits in the `*Copbot.py` and `*Robber.py` scripts.
-
 1. Create the Package:
     ```
     cd ~/catkin_ws/src
@@ -77,7 +71,7 @@ This would also require you to change the world directory in the `*_Area.launch`
     ```
     cd ~/Downloads
     rm -rf course-project-brandon_and_ben
-    git clone https://github.com/IE-482-582/course-project-brandon_and_ben.git
+    git clone https://github.com/bengreatrix/cops_and_robbers.git
     ```
 4. Copy the Python scripts and robots to our project workspace
     ```
